@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'BOWLER';
+  src: url('../fonts/BOWLER-Regular.eot');
+  src: url('../fonts/BOWLER-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/BOWLER-Regular.woff2') format('woff2'),
+      url('../fonts/BOWLER-Regular.woff') format('woff'),
+      url('../fonts/BOWLER-Regular.ttf') format('truetype'),
+      url('../fonts/BOWLER-Regular.svg#BOWLER-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

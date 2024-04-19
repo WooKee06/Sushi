@@ -1,0 +1,3042 @@
+ /* font-family: 'IBM Plex Mono', monospace; */
+ /*  font-family: 'BOWLER'; */
+
+
+
+ html,
+ body {
+   position: relative;
+   height: 100%;
+   font-size: 15px;
+   background-color: #000000;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+ }
+
+
+ .cart-list-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .cart-list-close-img {
+   background-image: url(../img/Закрыть.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: inline-block;
+   width: 1.6875rem;
+   height: 1.6875rem;
+   margin-right: 3.5rem;
+ }
+
+ .menu-sercle {
+   background-image: url(../img/Ellipse\ 22.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: inline-block;
+   width: 0.5rem;
+   height: 0.5rem;
+ }
+
+
+ .bg-FreeShipping-span {
+   color: #FFF;
+   text-align: right;
+   font-family: IBM Plex Mono;
+   font-size: 0.8125rem !important;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 1.3125rem;
+   margin-left: 0 !important;
+ }
+
+ .bg-FreeShipping {
+   padding: 1rem;
+   border: 1px solid #fff;
+   border-radius: 8px;
+   width: 80vw;
+   margin: 2rem auto;
+   text-align: center;
+ }
+
+
+
+ .header {
+   width: 68vw;
+   margin: 10px auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .FreeShipping {
+   color: #fff;
+   font-family: 'IBM Plex Mono', monospace;
+   font-weight: 300;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+ }
+
+ hr {
+   border-top: 0.5px solid rgba(255, 255, 255, 0.644);
+   border-bottom: none;
+ }
+
+ .logo {
+   background-image: url(../img/Logo.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   width: 11rem;
+   height: 7rem;
+   margin: 10px 0;
+
+ }
+
+
+ .nav-ul {
+   display: flex;
+   gap: 4rem;
+   color: #fff;
+
+   font-family: 'IBM Plex Mono', monospace;
+   display: flex;
+   align-items: center;
+
+
+   list-style: none;
+ }
+
+
+ /* .nav ul li a:hover {
+   font-weight: 600;
+ } */
+
+ .menu {
+   color: #F0F;
+   font-family: IBM Plex Mono;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.125rem;
+
+   cursor: pointer;
+ }
+
+
+ .tel {
+   color: #FFF;
+   font-family: IBM Plex Mono;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.125rem;
+ }
+
+ /*------------------------------------ drop douwn--------------- */
+ .dropbtn {
+   color: #F0F;
+   font-family: IBM Plex Mono;
+   font-size: 1.5rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 2.125rem;
+   cursor: pointer;
+   border: none;
+   background: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+ }
+
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+   transition: opacity 0.3s ease-in-out;
+ }
+
+ /* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   top: 51px;
+   left: 1px;
+   background-color: #17171740;
+   border-radius: 4px;
+   width: 37rem;
+   z-index: 1;
+   transition: opacity 0.3s ease-in-out;
+   opacity: 0;
+   text-decoration: none;
+   display: inline-block;
+   color: #ffffffab;
+ }
+
+ .drop-list {
+   list-style-type: none;
+   margin-top: 1rem;
+   display: inline-block;
+   margin-right: 3rem;
+
+ }
+
+
+
+
+ /* Change color of dropdown links on hover */
+
+
+ .dropdown-content:hover {
+   background-color: #1717178f;
+   border-radius: 4px;
+   opacity: 1;
+ }
+
+ /* Show the dropdown menu on hover */
+ .dropdown:hover .dropdown-content {
+   display: block;
+   opacity: 1;
+ }
+
+ /* Links inside the dropdown */
+ .dropdown-content a {
+   margin-bottom: 0.5rem;
+   font-family: IBM Plex Mono;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.3125rem;
+   transition: all 0.3s ease-in-out;
+ }
+
+
+ .dropdown-content a {
+   text-decoration: none;
+   /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+   display: inline-block;
+   /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+ line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+   color: #ffffffab;
+   /*Задаём цвет ссылки*/
+ }
+
+ .drop-list li a:after {
+   display: block;
+   /*превращаем его в блочный элемент*/
+   content: "";
+   /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+   height: 2px;
+
+   /*задаём высоту линии*/
+   width: 0%;
+   /*задаём начальную ширину элемента (линии)*/
+   background-color: #F0F;
+   /*цвет фона элемента*/
+   transition: all 0.4s ease-in-out;
+   /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+ }
+
+ .drop-list li a:hover::after {
+   width: 100%;
+   opacity: 1;
+   border-radius: 10%;
+ }
+
+ .drop-list li a:hover {
+   color: #ffffff;
+ }
+
+ .drop-list {
+   margin: 20px;
+ }
+
+
+ .mySwiper {
+   width: 68vw;
+ }
+
+ .mySwiper2 {
+   width: 68vw;
+ }
+
+
+ /*----------------- Main title------------------ */
+
+ .right-img {
+   background-image: url(../img//Suchi.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 96rem;
+   height: 51rem;
+   margin-top: -207px;
+ }
+
+ .header-title {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 8rem;
+
+ }
+
+ .left {
+   margin-left: 19rem;
+   color: #fff;
+   width: 90rem;
+   padding-top: 2rem;
+ }
+
+ .left h1 {
+   color: #FFF;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+ }
+
+ .left span {
+   color: #0058FF;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+ }
+
+ .left button {
+   color: rgba(254, 253, 9, 0.00);
+   font-family: BOWLER;
+   font-size: 1.6875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.3125rem;
+   letter-spacing: 0.0675rem;
+   -webkit-text-stroke: 0.1px #FEFD09;
+   -webkit-text-stroke-width: 0.1mm;
+
+
+
+   padding: 0.4em 2rem 0.3em 2rem;
+   border-radius: 0.5rem;
+   border: 1px solid #FEFD09;
+   background: none;
+
+   margin-top: 1.8rem;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .left button:hover {
+   box-shadow: rgb(220, 200, 24) 0px 0px 29px 0px;
+   border: 1px solid #fefe0900;
+   background-color: rgb(220, 200, 24);
+   color: #000000;
+   -webkit-text-stroke: #FEFD09;
+   padding: 0.4em 2rem 0.3em 2rem;
+   -webkit-text-stroke-width: 0mm;
+ }
+
+ .cart {
+   background-image: url(../img/Корзина.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 2.4rem;
+   height: 1.9rem;
+
+   float: right;
+   margin-right: 10px;
+   margin-top: 10px;
+ }
+
+ .cart-block {
+   width: 75vw;
+   margin: 10px auto;
+ }
+
+ .Burger-cart {
+   background-image: url(../img/Корзина.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 2.4rem;
+   height: 1.9rem;
+   float: right;
+   display: none;
+ }
+
+
+
+
+ .uzumaki {
+   background-image: url(../img/нарутомаки.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 3rem;
+   height: 3rem;
+
+   transform: rotate(17.481deg);
+
+   float: left;
+   margin-left: -35px;
+   margin-top: 10px;
+   margin-bottom: 2rem;
+   z-index: 1;
+ }
+
+ .uzumaki-block {
+
+   width: 68vw;
+   margin: -110px auto;
+   margin-bottom: 0;
+
+   display: flex;
+   flex-direction: column;
+ }
+
+ .slide-btn {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2.45rem;
+ }
+
+ .slider {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .left-slide {
+   background-image: url(../img/VectorL.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.43356rem;
+   height: 2.38631rem;
+   margin-right: 1.5rem;
+ }
+
+ .right-slide {
+   background-image: url(../img/VectorR.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.43356rem;
+   height: 2.38631rem;
+ }
+
+
+ .swiper-slide {
+   flex-shrink: 0;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transition-property: transform;
+ }
+
+ /* ------------------Блок с нашими роллами --------------- */
+
+ .rols-block {
+   color: #fff;
+   font-family: 'BOWLER';
+   display: flex;
+   gap: 1rem;
+   width: 68vw;
+   margin: 10px auto;
+ }
+
+ .Rolls-title {
+   color: #FFF;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+ }
+
+ .roll-title {
+   color: #FFF;
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   /* margin-top: 1rem; */
+   line-height: 1.75rem;
+ }
+
+ .roll-title span {
+   color: #F0F;
+   font-family: BOWLER;
+   font-size: 1.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+ .roll-info {
+   color: #FFF;
+
+   font-family: IBM Plex Mono;
+   font-size: 1.175rem;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 1.375rem;
+ }
+
+ .img-ingridients {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .ingridients ul li::marker {
+   color: #F0F;
+   font-size: 0.95rem;
+
+
+ }
+
+ .ingridients ul {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+ }
+
+ .ingridients {
+   margin-top: 2.5rem;
+ }
+
+ .ingridients ul li {
+   color: #FFF;
+   font-family: IBM Plex Mono;
+   align-items: center;
+   font-size: 0.95rem;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 1.25rem;
+   list-style-position: inside;
+
+
+ }
+
+ .roll {
+   border-radius: 0.625rem;
+   background: #171717;
+   padding: 1rem 0 0 1rem;
+   display: inline-block;
+ }
+
+ .img-roll {
+   background-image: url(../img/roll-filadel.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15rem;
+   height: 11rem;
+ }
+
+ .img-roll2 {
+   background-image: url(../img/20220720185839_firmennyij-roll_clipdrop-background-removal\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15rem;
+   height: 11rem;
+ }
+
+ .img-roll3 {
+   background-image: url(../img/20220720163714_roll-s-lososem-_clipdrop-background-removal\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15rem;
+   height: 11rem;
+ }
+
+
+ .by-roll {
+   display: flex;
+   align-items: baseline;
+   justify-content: flex-end;
+
+ }
+
+ .roll-by {
+   display: flex;
+   flex-direction: column;
+
+   min-width: 27rem;
+
+ }
+
+ .by-roll button {
+   color: rgba(254, 253, 9, 0.00);
+   font-family: BOWLER;
+   font-size: 0.7875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.3125rem;
+   letter-spacing: 0.0675rem;
+   color: #FEFD09;
+
+
+   display: block;
+
+   padding: 0.2rem 1.8rem 0 1.8rem;
+   border-radius: 0.5rem;
+   border: 1px solid #FEFD09;
+   background: none;
+
+   margin-top: 1rem;
+   transition: all 0.3s ease-in-out;
+ }
+
+
+
+ .by-roll button:hover {
+   box-shadow: rgb(220, 200, 24) 0px 0px 29px 0px;
+   border: 1px solid #fefe0900;
+   background-color: rgb(220, 200, 24);
+   color: #000000;
+
+   -webkit-text-stroke: #FEFD09;
+   -webkit-text-stroke-width: 0mm;
+
+   display: block;
+ }
+
+ .price {
+   margin-right: 1rem;
+ }
+
+
+ .voln {
+   background-image: url(../img/Волны\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 7rem;
+   height: 5rem;
+   float: right;
+   transform: rotate(359deg);
+ }
+
+ .voln2 {
+   background-image: url(../img/Волны\ 1.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 7rem;
+   height: 5rem;
+   float: right;
+   transform: rotate(359deg);
+ }
+
+ .Voln {
+   width: 75vw;
+   margin: 10px auto;
+   margin-top: 4rem;
+ }
+
+
+ /*------------------ MENU ----------------------*/
+
+ .menus {
+   width: 68vw;
+   margin: 5rem auto;
+ }
+
+ .menus h2 {
+   color: #FFF;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+   margin-bottom: 2rem;
+ }
+
+ .mItem {
+   padding: 1.25rem 2rem;
+   background-color: #171717;
+   display: inline-block;
+   border-radius: 8px;
+   display: inline-block;
+   transition: all 0.3s ease-in-out;
+   border: 1.5px solid rgba(255, 0, 255, 0);
+ }
+
+ .mItem:hover {
+   border: 1.5px solid #F0F;
+ }
+
+
+
+ .mItem h3 {
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+
+   margin-bottom: 1.25rem;
+   text-align: center;
+ }
+
+ .mItem1 h3 {
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+
+   margin-bottom: 1.25rem;
+   text-align: center;
+ }
+
+ .roll-img {
+   background-image: url(../img/roll-iz-tuntsa.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 16.15rem;
+   height: 10.8125rem;
+   margin: 0 auto;
+ }
+
+ .roll-img5 {
+   background-image: url(../img/slabosolenyij-l.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 14rem;
+   height: 9.875rem;
+   margin: 0 auto;
+ }
+
+ .roll-img2 {
+   background-image: url(../img/roll-iz-lososya.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 12.75rem;
+   height: 9.8125rem;
+
+
+   margin: 0 auto;
+ }
+
+ .roll-img3 {
+   background-image: url(../img/Mask\ group.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15.75rem;
+   height: 7.8125rem;
+   transform: rotate(4.005deg);
+
+
+   margin: 0 auto;
+ }
+
+ .roll-img4 {
+   background-image: url(../img/roll-iz-kopchen2.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 12.75rem;
+   height: 11.4375rem;
+   margin: 0 auto;
+ }
+
+ .roll-img6 {
+   background-image: url(../img/toro-s-ikroj-mo.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 13.6875rem;
+   height: 10.125rem;
+   margin: 0 auto;
+ }
+
+ .roll-img7 {
+   background-image: url(../img/assorti-ot-shef.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 10.9375rem;
+   height: 11.625rem;
+   margin: 0 auto;
+ }
+
+ .roll-img8 {
+   background-image: url(../img/ramen-v-stile-t.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15.75rem;
+   height: 11.25rem;
+   margin: 0 auto;
+ }
+
+ .roll-img9 {
+   background-image: url(../img/gma-4081-min.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15.3125rem;
+   height: 11rem;
+   margin: 0 auto;
+ }
+
+
+ .roll-img10 {
+   background-image: url(../img/slat-clipdrop.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 14.125rem;
+   height: 10.3125rem;
+   margin: 0 auto;
+ }
+
+ .roll-img11 {
+   background-image: url(../img/medal-on-iz-mra.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 15.0625rem;
+   height: 9.8125rem;
+   margin: 0 auto;
+ }
+
+ .roll-img12 {
+   background-image: url(../img/imperatorskie-m.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 14.5625rem;
+   height: 9.9375rem;
+   margin: 0 auto;
+ }
+
+ .roll-img13 {
+   background-image: url(../img/gma-4899-edamam.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 14.0625rem;
+   height: 9.625rem;
+   margin: 0 auto;
+ }
+
+ .roll-img14 {
+   background-image: url(../img/sinerdzhi-gazir.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 13.878999999999998rem;
+   height: 14.99838rem;
+   transform: rotate(357deg);
+   margin: 0 auto;
+ }
+
+ .roll-img15 {
+   background-image: url(../img/assorti_clipdrop.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 17.125rem;
+   height: 8rem;
+   margin: 3rem auto;
+ }
+
+ .menu-items {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-column-gap: 12px;
+   grid-row-gap: 12px;
+ }
+
+ .voln-dector {
+   background-image: url(../img/Декор\ отзывы.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 5rem;
+   height: 4rem;
+   transform: rotate(17.481deg);
+ }
+
+ .crevetca-dector {
+   background-image: url(../img/Декор\ меню.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 9.78894rem;
+   height: 11.01169rem;
+   transform: rotate(17.481deg);
+   position: absolute;
+   right: 15rem;
+   top: 164rem;
+ }
+
+ .voln-block {
+   width: 75vw;
+   margin: 20px auto;
+   display: flex;
+   align-content: stretch;
+   justify-content: space-between;
+   align-items: flex-end;
+ }
+
+
+ .slide-btn {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2.45rem;
+ }
+
+ .Dector-slider {
+   display: flex;
+   width: 68vw;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .left-slide {
+   background-image: url(../img/VectorL.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.43356rem;
+   height: 2.38631rem;
+   margin-right: 1.5rem;
+ }
+
+ .right-slide {
+   background-image: url(../img/VectorR.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.43356rem;
+   height: 2.38631rem;
+ }
+
+ .Dector-slider h2 {
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+ }
+
+
+
+ .reviews {
+   color: #fff;
+   font-family: 'BOWLER';
+
+
+   display: flex;
+   gap: 1rem;
+   width: 68vw;
+   margin: 20px auto;
+ }
+
+ .review {
+   border-radius: 0.625rem;
+   background: #171717;
+   display: inline-block;
+   width: 25rem;
+ }
+
+
+ .avatar {
+   background-image: url(../img/Ellipse\ 27.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 3.85rem;
+   height: 3.85rem;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 1rem;
+ }
+
+ .name {
+   display: inline-block;
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+ .review-info {
+   display: inline-block;
+   color: #F0F;
+
+   font-family: BOWLER;
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.375rem;
+ }
+
+ .peopl-info {
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+
+ }
+
+ .people-title {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .review hr {
+   stroke-width: 0.6px;
+   background-color: #FEFD09;
+   width: 13.125rem;
+   float: left;
+   margin-left: 1rem;
+ }
+
+ .reviews-content {
+   color: #FFF;
+   padding: 0 1.2rem 1.4rem 1.2rem;
+   font-family: IBM Plex Mono;
+   font-size: 0.75rem;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 1.25rem;
+ }
+
+
+
+ .menu-all {
+   color: rgba(254, 253, 9, 0.00);
+   font-family: BOWLER;
+   font-size: 1.1875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.3125rem;
+   letter-spacing: 0.0675rem;
+   color: #FEFD09;
+
+   margin: 0 auto;
+
+   display: block;
+
+   padding: 0.3rem 1.8rem 0.1rem 1.8rem;
+   border-radius: 0.5rem;
+   border: 1px solid #FEFD09;
+   background: none;
+   transition: all 0.3s ease-in-out;
+ }
+
+
+
+ .menu-all:hover {
+   box-shadow: rgb(220, 200, 24) 0px 0px 29px 0px;
+   border: 1px solid #fefe0900;
+   background-color: rgb(220, 200, 24);
+   color: #000000;
+
+   -webkit-text-stroke: #FEFD09;
+   -webkit-text-stroke-width: 0mm;
+
+   display: block;
+ }
+
+
+
+ /* --------cart ---------------- */
+
+ .Cart-list {
+   width: 68vw;
+   margin: 6rem auto;
+
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+
+ .Cart-list h2 {
+   color: #FFF;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+   margin-bottom: 2rem;
+ }
+
+ .cart-item {
+   display: flex;
+   width: 77.5625rem;
+   margin: 0 auto;
+   justify-content: space-between;
+ }
+
+
+ .cart-item-img {
+   background-image: url(../img/Товар.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 7.0625rem;
+   height: 5.4375rem;
+
+   margin-right: 2rem;
+ }
+
+ .cart-item-img2 {
+   background-image: url(../img/Товар2.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 7.0625rem;
+   height: 5.4375rem;
+
+   margin-right: 2rem;
+ }
+
+ .cart-item-img3 {
+   background-image: url(../img/Товар3.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 7.0625rem;
+   height: 5.4375rem;
+
+   margin-right: 2rem;
+ }
+
+ .item-remove {
+   background-image: url(../img/Удалить.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.31006rem;
+   height: 1.6875rem;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+ }
+
+ .item-remove:hover {
+   filter: hue-rotate(100deg);
+
+ }
+
+
+
+
+ .minus {
+   background-image: url(../img/Минус.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 2rem;
+   height: 2.1rem;
+   background-color: #ffffff00;
+   border: none;
+   cursor: pointer;
+
+   transition: all 0.2s ease-in-out;
+ }
+
+ .minus:hover {
+   filter: hue-rotate(100deg);
+ }
+
+ .plus {
+   background-image: url(../img/Плюс.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 2rem;
+   cursor: pointer;
+   height: 2.1rem;
+   background-color: #ffffff00;
+   border: none;
+   transition: all 0.2s ease-in-out;
+ }
+
+ .plus:hover {
+   filter: hue-rotate(-100deg);
+   filter: drop-shadow(16px 16px 20px rgb(0, 4, 255)) invert(75%);
+   ;
+ }
+
+ .item-title-btn {
+   display: flex;
+   justify-content: space-between;
+   width: 55vw;
+ }
+
+ .number-price {
+   float: right;
+ }
+
+ .item-title {
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+ .item-name {
+   color: #F0F;
+
+   font-family: BOWLER;
+   font-size: 0.875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.375rem;
+ }
+
+ .number span {
+   color: #FFF;
+
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+ .number {
+   align-items: center;
+   display: flex;
+   gap: 0.8rem;
+ }
+
+ .number-price {
+   display: flex;
+ }
+
+ .cart-item-price {
+   color: #FFF;
+   margin-left: 5rem;
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+
+
+ .summ-submit {
+   color: rgba(254, 253, 9, 0.00);
+   font-family: BOWLER;
+   font-size: 0.7875rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.3125rem;
+   letter-spacing: 0.0675rem;
+   color: #FEFD09;
+
+   width: 100%;
+   margin: 0 auto;
+
+   display: block;
+
+   padding: 0.3rem 1.8rem 0.3rem 1.8rem;
+   border-radius: 0.5rem;
+   border: 1px solid #FEFD09;
+   background: none;
+
+   margin-top: 1rem;
+   transition: all 0.3s ease-in-out;
+ }
+
+
+
+ .summ-submit:hover {
+   box-shadow: rgb(220, 200, 24) 0px 0px 29px 0px;
+   border: 1px solid #fefe0900;
+   background-color: rgb(220, 200, 24);
+   color: #000000;
+
+   -webkit-text-stroke: #FEFD09;
+   -webkit-text-stroke-width: 0mm;
+
+   display: block;
+ }
+
+
+ .itog-summ {
+   width: 12rem;
+   float: right;
+
+ }
+
+ .itog {
+   display: flex;
+   justify-content: space-between;
+   color: #FFF;
+   gap: 1rem;
+   font-family: BOWLER;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+ }
+
+ .itog-hr {
+   stroke: #FFF;
+   margin-top: 2rem;
+ }
+
+ .itog-submit {
+   width: 63vw;
+   margin: 0 auto;
+   margin-top: 2rem;
+ }
+
+ /*------------------- footer-------------- */
+
+ .foot-title {
+   color: rgba(255, 255, 255, 0.00);
+
+
+   text-align: center;
+   -webkit-text-stroke: 0.1px #FEFD09;
+   -webkit-text-stroke-width: 0.1mm;
+   font-family: BOWLER;
+   font-size: 3.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 4.0625rem;
+
+   margin-bottom: 2rem;
+ }
+
+
+ .footer-bclor {
+   width: 68vw;
+   margin: 0 auto;
+ }
+
+ .foot-info {
+   color: #FFF;
+
+   text-align: center;
+   font-family: IBM Plex Mono;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+
+
+   padding: 2rem;
+
+   border-radius: 0.625rem;
+   border: 2px solid #F0F;
+
+   background: rgba(217, 217, 217, 0.00);
+ }
+
+ .img-dec {
+   background-image: url(../img/Палочки\ и\ суши\ декор.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 21.4375rem;
+   height: 19.56163rem;
+
+ }
+
+ .footer {
+   width: 68vw;
+   margin: 10px auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+
+ .foot-cont h3 {
+   color: #FFF;
+   text-align: right;
+   font-family: IBM Plex Mono;
+   font-size: 0.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.25rem;
+ }
+
+
+ .cont-img {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+
+
+
+ .inst {
+   background-image: url(../img/Инстаграм.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.59213rem;
+   height: 1.59213rem;
+   margin-right: 0.6rem;
+ }
+
+ .vk {
+   background-image: url(../img/VKeector.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 2.5125rem;
+   height: 1.4125rem;
+ }
+
+
+
+ .foot-cont {
+   height: 4rem;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: column;
+ }
+
+
+ /*-------------- burger ---------------------- */
+
+ .burger-checkbox {
+   position: absolute;
+   visibility: hidden;
+
+
+
+ }
+
+ .burger {
+   position: relative;
+   z-index: 4;
+   cursor: pointer;
+   display: block;
+   position: relative;
+   width: 36px;
+   height: 26px;
+
+   display: none;
+   border-radius: 10px;
+   text-decoration: none;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+   color: var(--color-text);
+   font-size: 26px;
+   cursor: pointer;
+   border-radius: var(--controls-btn-border-radius);
+   background: transparent;
+   padding: 0;
+
+ }
+
+ .burger::before,
+ .burger::after {
+   content: '';
+   left: 0;
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 2px;
+   border-radius: 10px;
+   background: #F0F;
+ }
+
+ .burger::before {
+   top: 0;
+   box-shadow: 0 11px 0 #f0F;
+   transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+ }
+
+ .burger::after {
+   bottom: 0;
+   transition: bottom .3s .15s, transform .3s;
+ }
+
+ .burger-checkbox:checked+.burger::before {
+   top: 11px;
+   transform: rotate(45deg);
+   box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+   transition: box-shadow .15s, top .3s, transform .3s .15s;
+ }
+
+ .burger-checkbox:checked+.burger::after {
+   bottom: 11px;
+   transform: rotate(-45deg);
+   transition: bottom .3s, transform .3s .15s;
+ }
+
+ .menu-list {
+   top: 0px;
+   left: -4rem;
+   position: absolute;
+   padding: 42px 0;
+   margin: 0;
+   background: #000000;
+   list-style-type: none;
+   transform: translateX(-100%);
+   transition: .3s;
+   width: 100%;
+   height: auto;
+   z-index: 3;
+ }
+
+ .menu-burger-list {
+   text-align: center;
+ }
+
+ .menu-list a {
+   color: #F0F;
+
+   font-family: IBM Plex Mono;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.75rem;
+   display: flex;
+   align-items: center;
+ }
+
+ .menu-list span {
+   margin-left: 150px;
+   font-size: 20px;
+   font-weight: 500;
+ }
+
+ .menu-item {
+   display: block;
+   margin-left: 150px;
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 20px;
+   text-decoration: none;
+   font-weight: 700;
+ }
+
+ .menu-item div {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   background-color: #000000;
+   margin: 0;
+   margin-right: 10px;
+ }
+
+ .menu-item:hover {
+   background: rgba(255, 255, 255, .2)
+ }
+
+ .burger-checkbox:checked~.menu-list {
+   transform: translateX(4rem);
+   -webkit-box-shadow: 0px 0px 83px 13px rgba(0, 0, 0, 0.28);
+   -moz-box-shadow: 0px 0px 83px 13px rgba(0, 0, 0, 0.28);
+   box-shadow: 0px 0px 83px 13px rgba(0, 0, 0, 0.28);
+ }
+
+
+
+
+
+ .bg-drop-list {
+   list-style-type: none;
+ }
+
+ .bg-drop-list a {
+   color: #FFFEFF;
+   font-family: IBM Plex Mono;
+   font-size: 1.1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   margin-bottom: 0.6rem;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .bg-drop-list a:hover {
+   text-decoration: underline;
+ }
+
+
+
+ .cart-burger {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   flex-direction: row-reverse;
+ }
+
+ .suchiPal {
+   background-image: url(../img/Палочки\ и\ суши\ декор.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 6.84325rem;
+   height: 6.31919rem;
+   display: none;
+ }
+
+
+ .item-remove-price {
+   display: none;
+ }
+
+ .item-remove-price {
+   background-image: url(../img/Удалить.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 1.31006rem;
+   height: 1.6875rem;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+   margin: 0 1.5rem;
+
+ }
+
+ .item-remove-price:hover {
+   filter: hue-rotate(100deg);
+
+ }
+
+ .br-nav-ul {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   color: #f0f;
+   font-family: 'IBM Plex Mono', monospace;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   margin-top: 30px;
+ }
+
+ .bg-FreeShipping a {
+   color: #FFF;
+   font-family: IBM Plex Mono;
+   font-size: 0.8125rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.3125rem;
+   justify-content: center;
+   margin-top: 1.2rem;
+ }
+
+ /* ---------------------butger inside------------ */
+
+ .menu-btn {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 26px;
+   height: 26px;
+   cursor: pointer;
+   z-index: 1;
+   opacity: 0;
+ }
+
+ .menu-btn>span,
+ .menu-btn>span::before,
+ .menu-btn>span::after {
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   background-color: #616161;
+   transition-duration: .25s;
+ }
+
+ .menu-btn>span::before {
+   content: '';
+   top: -8px;
+ }
+
+ .menu-btn>span::after {
+   content: '';
+   top: 8px;
+ }
+
+ .menubox {
+   display: block;
+   margin: 0;
+   list-style: none;
+   background-color: #000000;
+   box-shadow: 1px 0prgb(0, 0, 0)gba(0, 0, 0, .2);
+   transition-duration: .25s;
+   display: none;
+   color: #fff;
+ }
+
+ .menu-item {
+   display: block;
+   padding: 12px 24px;
+   color: #333;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   text-decoration: none;
+   transition-duration: .25s;
+ }
+
+ .menu-item:hover {
+   background-color: #CFD8DC;
+ }
+
+
+ #menu-toggle {
+   opacity: 0;
+ }
+
+ #menu-toggle:checked~.menu-btn>span {
+   transform: rotate(45deg);
+ }
+
+ #menu-toggle:checked~.menu-btn>span::before {
+   top: 0;
+   transform: rotate(0);
+ }
+
+ #menu-toggle:checked~.menu-btn>span::after {
+   top: 0;
+   transform: rotate(90deg);
+ }
+
+ #menu-toggle:checked~.menubox {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   width: 80vw;
+ }
+
+ /*------------------------- butger --------------------------------- */
+
+
+
+ .swiper {
+  padding-right: 40px !important;
+}
+
+
+
+
+ .modal-container p {
+   color: #FFF;
+
+   text-align: left;
+   font-family: IBM Plex Mono;
+   font-size: 0.8rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   margin-bottom: 1.3rem;
+ }
+
+ .modal-container h3 {
+   color: #FFF;
+   text-align: left;
+   font-family: IBM Plex Mono;
+   font-size: 1.1rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.5rem;
+   margin-bottom: 0.5rem;
+ }
+
+ .modal-container h1 {
+   color: #FFF;
+   text-align: left;
+   font-size: 2rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.5rem;
+   margin-bottom: 0.5rem;
+ }
+
+
+ .modal-title {
+   color: #FFF;
+   text-align: left;
+   font-family: IBM Plex Mono;
+   font-size: 1.8rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 1.5rem;
+   margin-bottom: 1rem;
+ }
+
+ .modal-container ol {
+   list-style-type: none;
+ }
+
+
+ .container {
+   padding: 100px 0;
+ }
+
+ .modal-container {
+   pointer-events: none;
+   opacity: 0;
+   position: fixed;
+   color: #fff;
+   z-index: -1;
+   left: 0;
+   font-family: IBM Plex Mono;
+   top: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 100vh;
+   padding: 30px;
+   background-color: rgba(0, 0, 0, 0);
+   transition: opacity .3s, background-color .5s;
+ }
+
+ .is-open {
+   opacity: 1;
+   pointer-events: all;
+   z-index: 999999;
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .modal-content {
+   overflow: auto;
+   width: 100%;
+   height: 100%;
+   max-width: 80vw;
+   max-height: 70vh;
+   padding: 20px;
+   border: 2px solid #F0F;
+   background-color: rgba(0, 0, 0, 0.726);
+   box-shadow: 0px 0px 157px 14px #380b5352;
+   border-radius: 0.6rem;
+ }
+
+ .modal-content::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   background-color: #00000000;
+ }
+
+ .modal-content::-webkit-scrollbar {
+   width: 12px;
+   border-radius: 10px;
+   background-color: #00000000;
+ }
+
+ .modal-content::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+   background-color: rgb(65, 15, 65);
+ }
+
+
+
+ .politic-info {
+   width: 68vw;
+   margin: 0rem auto;
+   color: #fff;
+ }
+
+ .politic-info h3 {
+   color: #FFF;
+   text-align: left;
+   font-family: IBM Plex Mono;
+   font-size: 0.8rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.5rem;
+   margin-bottom: 1rem;
+   cursor: pointer;
+   text-align: center;
+ }
+
+ .close {
+   position: absolute;
+   right: 5rem;
+   top: 3rem;
+   width: 2rem;
+   height: 2rem;
+   padding: 0.6rem;
+   background: #00000000;
+   filter: drop-shadow(0px 0px 18.3px rgba(255, 255, 255, 0.30));
+   border: none;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(../img/CloseVector.svg);
+   border-radius: 3px;
+ }
+
+
+
+
+ /* sdfffffffffffffffffffffffffffffffffffffffffffffffffff */
+ @media (max-width: 2200px) {
+  .by-roll {
+    width: 85%;
+  }
+ }
+
+
+
+
+
+ @media (max-width: 1880px) {
+   .nav-ul {
+     gap: 2rem;
+   }
+
+   .by-roll {
+     width: 92%;
+   }
+ }
+
+ @media (max-width: 1650px) {
+   .nav-ul {
+     gap: 1rem;
+   }
+
+   .menu-items {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 12px;
+     grid-row-gap: 12px;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 70.5625rem;
+     margin: 0 auto;
+     justify-content: space-between;
+   }
+
+   .crevetca-dector {
+     right: 5rem;
+     top: 172rem;
+   }
+ }
+
+ @media (max-width: 1550px) {
+   .logo {
+     width: 10rem;
+     height: 6rem;
+     margin: 16px 0;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 64.5625rem;
+     margin: 0 auto;
+     justify-content: space-between;
+   }
+
+   .menu-items {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 12px;
+     grid-row-gap: 12px;
+   }
+
+ }
+
+ @media (max-width: 1450px) {
+   .cart-item {
+     display: flex;
+     width: 61.5625rem;
+     margin: 0 auto;
+     justify-content: space-between;
+   }
+
+   .menu-items {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 12px;
+     grid-row-gap: 12px;
+   }
+
+   .crevetca-dector {
+     right: 3rem;
+     top: 183rem;
+   }
+ }
+
+ @media (max-width: 1350px) {
+
+   .tel,
+   .menu,
+   .dropbtn {
+     font-size: 1rem;
+   }
+
+   .dropdown-content a {
+     font-size: 0.6rem;
+     line-height: 0;
+   }
+
+   .dropdown-content {
+     width: 25rem;
+   }
+
+   .left {
+     margin-left: 12rem;
+   }
+
+   .left h1 {
+     font-size: 2.75rem;
+   }
+
+   .right-img {
+     width: 101rem;
+     height: 45rem;
+   }
+
+ }
+
+ @media (max-width: 1180px) {
+   .cart-item {
+     display: flex;
+     width: 51.5625rem;
+     margin: 0 auto;
+     justify-content: space-between;
+   }
+
+   .menu-items {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+   }
+
+   .left span,
+   .left h1 {
+     font-size: 2rem;
+   }
+
+   .Cart-list {
+     width: 68vw;
+     margin: 8rem auto;
+     margin-bottom: 0;
+   }
+
+   .itog-submit {
+     margin-bottom: 10rem;
+     width: 80vw;
+   }
+
+   .header {
+     width: 74vw;
+   }
+
+ }
+
+ @media (max-width: 1000px) {
+   .nav {
+     display: none;
+   }
+
+   .cart {
+     display: none;
+   }
+
+
+
+   .Burger-cart {
+     display: block;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 45.5625rem;
+   }
+
+   .item-title,
+   .cart-item-price {
+     font-size: 0.9rem;
+   }
+
+   .item-name {
+     font-size: 0.7em;
+   }
+
+   .minus {
+     width: 1.65rem;
+     height: 1.7rem;
+   }
+
+   .plus {
+     width: 1.7rem;
+     height: 1.7rem;
+   }
+
+   .img-dec {
+     width: 17.4375rem;
+     height: 15.56163rem;
+   }
+
+   .header-title {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 4rem;
+   }
+
+   .burger {
+     display: inline-flex;
+   }
+ }
+
+ @media (max-width: 920px) {
+
+   html {
+     font-size: 13px;
+   }
+
+ }
+
+ @media (max-width: 820px) {
+   .left {
+     margin-left: 8rem;
+     width: 80vw;
+   }
+
+   .right-img {
+     width: 127rem;
+     height: 44rem;
+     margin-top: -75px;
+   }
+
+   .header-title {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+     margin-top: 2rem;
+     margin-bottom: 4rem;
+   }
+
+   .right-img {
+     width: 40rem;
+     height: 40rem;
+     margin-top: -151px;
+     margin-left: 275px;
+   }
+
+   .slide-btn {
+     display: none;
+   }
+
+   .crevetca-dector {
+     right: 2rem;
+     top: 234rem;
+   }
+
+   .reviews-content {
+     color: #FFF;
+     font-family: IBM Plex Mono;
+     font-size: 1.35rem;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 1.75rem;
+     padding: 0.6rem;
+
+   }
+
+   .avatar {
+     width: 4.85rem;
+     height: 4.85rem;
+     border-radius: 50%;
+     display: inline-block;
+     margin-right: 0.8rem;
+   }
+
+   .name {
+     font-size: 1.65rem;
+   }
+
+   .review-info {
+     font-size: 1.275rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 1.375rem;
+     margin-top: 1rem;
+   }
+
+   .roll-title,
+   .roll-title span {
+     font-size: 2.15rem;
+   }
+
+   .roll-title {
+     margin-right: 1rem;
+   }
+
+   .img-roll {
+     width: 21rem;
+     height: 15rem;
+   }
+
+   .ingridients ul li {
+     font-size: 1.15rem;
+   }
+
+   .roll-title {
+     margin-right: 3rem;
+   }
+
+   .img-roll {
+     width: 21rem;
+     height: 12rem;
+   }
+
+   .img-roll2 {
+     width: 21rem;
+     height: 12rem;
+   }
+
+   .img-roll3 {
+     width: 21rem;
+     height: 12rem;
+   }
+
+   .by-roll {
+     display: flex;
+     align-items: baseline;
+     justify-content: flex-end;
+     margin-right: 6rem;
+   }
+
+   .by-roll {
+     display: flex;
+     justify-content: space-between;
+     /* margin-right: 6rem; */
+     align-content: space-around;
+     align-items: flex-end;
+     width: 100%;
+     margin: 0 auto;
+   }
+
+   .swiper-slide {
+     flex-shrink: 0;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     transition-property: transform;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+ }
+
+
+
+ @media (max-width: 850px) {
+   .roll-title {
+     color: #FFF;
+     font-family: BOWLER;
+     font-size: 1.25rem;
+     font-style: normal;
+     font-weight: 400;
+     /* margin-top: 1rem; */
+     line-height: 1.75rem;
+   }
+
+   .modal-container {
+     margin-top: 0rem;
+   }
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .roll-title span {
+     color: #FFF;
+     font-family: BOWLER;
+     font-size: 1.25rem;
+     font-style: normal;
+     font-weight: 400;
+     /* margin-top: 1rem; */
+     line-height: 1.75rem;
+   }
+ }
+
+ @media (max-width: 730px) {
+   .right-img {
+     width: 37rem;
+     height: 39rem;
+     margin-top: -151px;
+     margin-left: 243px;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 41.5625rem;
+   }
+
+   .modal-container {
+     margin-top: 0rem;
+   }
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(250 6 251 / 6%);
+   }
+
+   .FreeShipping {
+     display: none;
+   }
+
+   .heder-top-border {
+     display: none;
+   }
+
+   .itog-summ {
+     width: 40rem;
+     float: right;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+   }
+
+   .summ-submit {
+     width: auto;
+     margin: 0;
+   }
+
+ }
+
+ @media (max-width: 650px) {
+   .right-img {
+     width: 37rem;
+     height: 39rem;
+     margin-top: -151px;
+     margin-left: 168px;
+   }
+
+   .modal-container {
+     margin-top: 0rem;
+   }
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(0 0 0 / 38%);
+   }
+
+   .menus {
+     width: 77vw;
+     margin: 5rem auto;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 35.5625rem;
+   }
+
+   .cart-item-img {
+     width: 6.0625rem;
+     height: 4.4375rem;
+     margin-right: 2rem;
+   }
+
+   .cart-item-img2 {
+     width: 6.0625rem;
+     height: 4.4375rem;
+     margin-right: 2rem;
+   }
+
+   .cart-item-img3 {
+     width: 6.0625rem;
+     height: 4.4375rem;
+     margin-right: 2rem;
+   }
+
+   .Cart-list {
+     width: 73vw;
+     margin: 8rem auto;
+     margin-bottom: 0;
+   }
+
+   .img-dec {
+     width: 11.4375rem;
+     height: 12.56163rem;
+     margin-bottom: 1rem;
+     margin-left: -2rem;
+   }
+
+   .roll-title {
+     margin-right: 1rem;
+   }
+
+   .price {
+     font-size: 1.4875rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 1.6875rem;
+   }
+
+   .by-roll button {
+     font-size: 1rem;
+   }
+
+   .right-img {
+     width: 29rem;
+     height: 34rem;
+     margin-top: -151px;
+     margin-left: 243px;
+   }
+ }
+
+ @media (max-width: 580px) {
+   .right-img {
+     width: 34rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(0 0 0 / 38%);
+   }
+
+   .modal-container {
+     margin-top: 5rem;
+   }
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .footer {
+     width: 86vw;
+     margin: 10px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .mySwiper2 {
+     width: 77vw;
+   }
+
+   html {
+     font-size: 12px;
+   }
+
+   .mItem {
+     padding: 1.25rem 1rem;
+   }
+
+   .mItem1 {
+     padding: 1.25rem 1rem;
+   }
+
+   .mySwiper {
+     width: 78vw;
+   }
+
+   .Dector-slider h2 {
+     font-size: 2.75rem;
+   }
+
+   .Dector-slider {
+     width: 76vw;
+   }
+
+   .crevetca-dector {
+     right: 7rem;
+     top: 225rem;
+   }
+
+   .right-img {
+     width: 35rem;
+     height: 36rem;
+     margin-top: -151px;
+     margin-left: 243px;
+   }
+
+   .right-img {
+     width: 27rem;
+     height: 32rem;
+     margin-top: -112px;
+     margin-left: 226px;
+   }
+
+
+ }
+
+ @media (max-width: 530px) {
+   .right-img {
+     width: 27rem;
+     height: 32rem;
+     margin-top: -112px;
+     margin-left: 196px;
+   }
+
+   .modal-container {
+     margin-top: 5rem;
+   }
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(0 0 0 / 38%);
+   }
+
+
+ }
+
+
+ @media (max-width: 500px) {
+   .right-img {
+     width: 19rem;
+     height: 28rem;
+     /* transform: rotate(348deg); */
+     margin-top: -82px;
+     margin-left: 168px;
+   }
+
+   .modal-container {
+     margin-top: 5rem;
+   }
+
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+   }
+
+   .voln {
+     background-image: url(../img/нарутомаки.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 4rem;
+     height: 4rem;
+     float: right;
+     transform: rotate(17.481deg);
+     position: absolute;
+     top: 79rem;
+     right: -0.6rem;
+   }
+
+   .footer {
+     width: 86vw;
+     margin: 10px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .uzumaki {
+     display: none;
+   }
+
+   .Rolls-title {
+     margin-top: 8rem;
+   }
+
+   .uzumaki-block {
+     width: 88vw;
+     margin: -110px auto;
+     margin-bottom: 0;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .voln2 {
+     background-image: url(../img/Волны\ 1.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 7rem;
+     height: 5rem;
+     display: none;
+     float: right;
+     transform: rotate(354deg);
+   }
+
+   .Rolls-title {
+     font-size: 2.75rem;
+   }
+
+   .suchiPal {
+     display: block;
+     float: right;
+     margin-right: -4rem;
+     transform: rotate(176deg);
+   }
+
+   .crevetca-dector {
+     right: 0;
+     top: 180rem;
+     transform: rotate(358deg);
+   }
+
+   .mItem {
+     padding: 1.25rem 1rem;
+     max-width: 13rem;
+     max-height: 13rem;
+     overflow: hidden;
+   }
+
+   .mItem1 {
+     padding: 1.25rem 1rem;
+     max-width: 13rem;
+     max-height: 13rem;
+     overflow: hidden;
+   }
+
+   .menus {
+     width: 101vw;
+     margin: 3rem 1rem;
+   }
+
+   .left span,
+   .left h1 {
+     font-size: 2.45rem;
+     line-height: 2.6rem;
+   }
+
+   .left {
+     margin-left: 2rem;
+     width: 85vw;
+   }
+
+   .roll-title,
+   .roll-title span {
+     font-size: 1.5rem;
+   }
+
+   .roll-info {
+     color: #FFF;
+     font-family: IBM Plex Mono;
+     font-size: 0.9175rem;
+   }
+
+   .ingridients ul li {
+     font-size: 0.75rem;
+   }
+
+   .img-roll {
+     width: 16.25rem;
+     height: 12.375rem;
+   }
+
+   .img-roll2 {
+     width: 16.25rem;
+     height: 12.375rem;
+   }
+
+   .img-roll3 {
+     width: 16.25rem;
+     height: 12.375rem;
+   }
+
+   .by-roll {
+     width: 90%;
+     margin: 0;
+   }
+
+   .mySwiper2 {
+     width: 82vw;
+   }
+
+   .roll-img,
+   .roll-img2,
+   .roll-img3,
+   .roll-img4,
+   .roll-img5,
+   .roll-img6,
+   .roll-img7,
+   .roll-img8,
+   .roll-img9,
+   .roll-img10,
+   .roll-img11,
+   .roll-img12,
+   .roll-img13,
+   .roll-img14,
+   .roll-img15 {
+     width: 9rem;
+     height: 6.7875rem;
+   }
+
+   .mItem h3 {
+     font-size: 1rem;
+     text-align: left;
+     margin-bottom: 1rem;
+   }
+
+   .mItem1 h3 {
+     font-size: 1rem;
+     text-align: left;
+     margin-bottom: 1rem;
+   }
+
+   .roll-img {
+     width: 12rem;
+     height: 10rem;
+     border-radius: 27px;
+   }
+
+   .roll-img3 {
+     width: 16rem;
+     height: 10.287500000000001rem;
+   }
+
+   .roll-img4 {
+     width: 9rem;
+     height: 7.2875rem;
+   }
+
+   .roll-img7 {
+     width: 7rem;
+     height: 7.2875rem;
+   }
+
+   .roll-img10 {
+     width: 7rem;
+     height: 5rem;
+   }
+
+   .roll-img11 {
+     width: 7rem;
+     height: 4.5rem;
+   }
+
+   .roll-img12 {
+     width: 7rem;
+     height: 4.5rem;
+   }
+
+   .roll-img14 {
+     width: 6rem;
+     height: 5.3rem;
+   }
+
+   .roll-img15 {
+     width: 11.4rem;
+     height: 5.3rem;
+   }
+
+   .roll-img13 {
+     width: 7.4rem;
+     height: 5.3rem;
+   }
+
+   .mItem h3 {
+     font-size: 1rem;
+     text-align: left;
+   }
+
+   .mItem1 h3 {
+     font-size: 1rem;
+     text-align: left;
+   }
+
+   .itog-summ {
+     width: 27rem;
+   }
+
+   .itog {
+     gap: 1rem;
+   }
+
+   .cart-item {
+     display: flex;
+     width: 26.5625rem;
+   }
+
+   .item-remove {
+     display: none;
+   }
+
+   .item-remove-price {
+     display: block;
+   }
+
+   .number-price {
+     align-items: center;
+     margin-top: 1rem;
+   }
+
+
+   .logo {
+     width: 5.20331rem;
+     height: 3.31244rem;
+   }
+
+   .inst {
+     width: 1.115rem;
+     height: 1.05631rem;
+     margin-right: 0.5rem;
+   }
+
+   .vk {
+     width: 1.8125rem;
+     height: 1.0625rem;
+   }
+
+   .visa {
+     width: 3.17856rem;
+     height: 1.02519rem;
+
+     margin-right: 0.5rem;
+   }
+
+   .img-dec {
+     background-image: url(../img/Волны\ 1.svg);
+     width: 4.17725rem;
+     margin-left: -4rem;
+     height: 3.8408800000000003rem;
+     transform: rotate(-8.15deg);
+   }
+
+   .mir {
+     width: 1.67856rem;
+     height: 1.04913rem;
+   }
+
+   .Cart-list {
+     width: 73vw;
+     margin: 5rem 2rem;
+     margin-bottom: 0;
+   }
+
+   .menus {
+     width: 87vw;
+     margin: -4rem 2rem;
+   }
+
+   .logo {
+     width: 6.90331rem;
+     height: 4.4rem;
+   }
+
+   .header {
+     width: 90vw;
+     margin: 10px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .mySwiper {
+     width: 91vw;
+   }
+
+   .reviews-content {
+     color: #FFF;
+     font-family: IBM Plex Mono;
+     font-size: 1.35rem;
+     font-size: 0.925rem;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 1.75rem;
+     padding: 0.6rem;
+   }
+
+   .footer-bclor {
+     width: 78vw;
+     margin: 0 auto;
+   }
+
+   .voln-dector {
+     display: none;
+   }
+
+   .Dector-slider {
+     width: 90vw;
+     margin: 8rem auto;
+     margin-bottom: 0;
+   }
+
+   .menu-all {
+     margin: 0 1.3rem;
+     font-size: 1.1875rem;
+     line-height: 1.6875rem;
+     padding: 0.6em 0.6em 0.5em 0.6em;
+   }
+
+   .img-roll {
+     width: 16.25rem;
+     height: 10.375rem;
+   }
+
+   .img-roll2 {
+     width: 16.25rem;
+     height: 10.375rem;
+   }
+
+   .img-roll3 {
+     width: 16.25rem;
+     height: 10.375rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(0 0 0 / 38%);
+   }
+
+
+ }
+
+ @media (max-width: 400px) {
+   .right-img {
+     width: 23rem;
+     height: 28rem;
+     margin-top: -82px;
+     margin-left: 127px;
+   }
+
+   .modal-container {
+     margin-top: 5rem;
+   }
+
+
+   .close {
+     position: absolute;
+     right: 1rem;
+     top: 9rem;
+     width: 1.5rem;
+     height: 1.5rem;
+   }
+
+   .swiper {
+     overflow: visible !important;
+     padding-right: 40px !important;
+   }
+
+   .Dector-slider {
+     width: 90vw;
+     margin: 8rem auto;
+     margin-bottom: 0;
+   }
+
+   .footer-bclor {
+     width: 78vw;
+     margin: 0 auto;
+   }
+
+   .mySwiper {
+     width: 91vw;
+   }
+
+   .reviews-content {
+     color: #FFF;
+     font-family: IBM Plex Mono;
+     font-size: 0.925rem;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 1.75rem;
+     padding: 0.6rem;
+   }
+
+   .crevetca-dector {
+     right: 0;
+     top: 180rem;
+     transform: rotate(358deg);
+   }
+
+   .voln-dector {
+     display: none;
+   }
+
+   html {
+     font-size: 12px;
+   }
+
+   .Cart-list h2 {
+     color: #FFF;
+     font-family: BOWLER;
+     font-size: 2.75rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 4.0625rem;
+     margin-bottom: -1rem;
+   }
+
+   .sticky-header {
+     position: sticky;
+     top: -0.1rem;
+     background-color: #000;
+     margin-top: -0.8000000000000007rem;
+     z-index: 4343;
+     -moz-box-shadow: 0px 0px 63px 50px rgba(35, 5, 56, 0.37);
+     box-shadow: 0px 0px 63px 50px rgb(0 0 0 / 38%);
+   }
+
+
+   .menus h2 {
+     color: #FFF;
+     font-family: BOWLER;
+     font-size: 2.75rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 4.0625rem;
+     margin-bottom: 2rem;
+     margin-top: 10rem;
+   }
+
+   .logo {
+     width: 9.90331rem;
+     height: 6.4rem;
+     margin: 0;
+     margin-top: 1rem;
+
+
+   }
+
+   .img-roll {
+     width: 16.25rem;
+     height: 11.375rem;
+   }
+
+   .img-roll2 {
+     width: 16.25rem;
+     height: 11.375rem;
+   }
+
+   .img-roll3 {
+     width: 16.25rem;
+     height: 11.375rem;
+   }
+
+   .mySwiper2 {
+     width: 82vw;
+     margin-left: 2rem !important;
+   }
+ }
